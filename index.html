@@ -12,21 +12,32 @@
 
 <body>
     <h1>Rock Paper and Scissors Game </h1>
-    <div class="gameScreen" class="game">
-        <form id="gameForm">
-            <label for="userInput">
+    <div id="welcomeScreen">
+        <form id="nameForm">
+            <label for="userName">
                 Name: 
-                <input type="text" id="userInput">
+                <input type="text" id="userName"/>
             </label>
-            <button id="startPlaying">Start Playing</button>
+            <button id="startGameButton">Start Playing</button>
         </form>
+    </div>
 
-        
-
+    <div id= "gameScreen" class="game">
+        <form id="gameForm">
+            <label for="userSelection">
+               Your Selection: 
+               <select id="userSelection">
+                   <option value="1">Rock</option>
+                   <option value="2">Paper</option>
+                   <option value="3">Scissors</option>
+               </select>
+            </label>
+           <button id="goButton">Go!</button>
+        </form>
     </div>
 
     <!-- Our own Scripts -->
-    <script src="jest.config.js"></script>
+    <script src="index.js"></script>
     <script src="resources/scripts/rock_paper_scissors.js"></script>
     <script src="resources/scripts/index.js"></script>
 </body>
