@@ -11,33 +11,46 @@
 </head>
 
 <body>
-    <h1>Rock Paper and Scissors Game </h1>
-    <div id="welcomeScreen">
-        <form id="nameForm">
-            <label for="userName">
-                Name: 
-                <input type="text" id="userName"/>
+
+    <div class="container">
+    <h1>Rock Paper and Scissors </h1>
+    <div id="welcome-screen">
+        <form id="name-form">
+            <label for="userName"> 
+                Name:
+                <input type="text" id="userName" placeholder="Enter Your Name Here">
             </label>
-            <button id="startGameButton">Start Playing</button>
+            <button id="start-game-button">Start Game</button>
         </form>
     </div>
 
-    <div id= "gameScreen" class="game">
-        <form id="gameForm">
-            <label for="userSelection">
-               Your Selection: 
-               <select id="userSelection">
-                   <option value="1">Rock</option>
-                   <option value="2">Paper</option>
-                   <option value="3">Scissors</option>
-               </select>
-            </label>
-           <button id="goButton">Go!</button>
+    <div id= "game-screen">
+        <div id="score-tally">
+            <p id="score">User: 0  v  CPU: 0</p>
+        </div>
+        <form id="game-form">
+            <div>
+                <label for="user-selection">
+                    Select Your Choice: 
+                </label>
+                <select id="user-selection">
+                    <option>Rock</option>
+                    <option>Paper</option>
+                    <option>Scissors</option>
+                </select>
+                <button id="go-button">Go!</button>
+            </div>
+            <p id="game-history">The history of game is</p>
+
+
         </form>
+           
+       
     </div>
+</div>
 
     <!-- Our own Scripts -->
-    <script src="index.js"></script>
+    
     <script src="resources/scripts/rock_paper_scissors.js"></script>
     <script src="resources/scripts/index.js"></script>
 </body>
