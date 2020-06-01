@@ -6,13 +6,13 @@ Instructions to this assignment can be found [here](https://it3049c.github.io/Ma
 
 ## Checklist:
 - [x] update the assignment checks above to the correct link. - Done Automatically
-- [ ] make sure the assignment checks pass
-- [ ] fill out the self evaluation and Reflection
-- [ ] submit the repository link on Canvas
+- [x] make sure the assignment checks pass
+- [x] fill out the self evaluation and Reflection
+- [x] submit the repository link on Canvas
 
 ## Self-Evaluation: 
 how many points out of 20 do you deserve on this assignment: 20
-I know I submitted it a day late but I do have one free thing for assignmnents left, so that is why, i gave 20.
+I know I submitted it a day late but I do have one free thing for assignmnents left, so that is why, i gave 20.s
 
 ## Self-Reflection:
 I have learnt many new things about javScript as I a new to it.
