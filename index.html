@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type your title here</title>
+    <title>Rock Paper and Scissors</title>
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/styles/styles.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/styles/styles.css" /> 
+ 
 </head>
 
 <body>
@@ -27,9 +27,9 @@
         </form>
     </div>
 
-    <div id= "game-screen">
+    <div id= "game-screen" class="hidden">
         <div id="score-tally">
-            <p id="score"><USERNAME:></USERNAME:> <USER_SCORE> v CPU: <CPU_SCORE></p>
+            <p id="score"><USERNAME:> <USER_SCORE> v CPU: <CPU_SCORE></p>
         </div>
         <form id="game-form">
             <div class="form-group">
@@ -37,9 +37,9 @@
                     Select Your Choice: 
                 </label>
                 <select id="user-selection" class="custom-select">
-                    <option>Rock</option>
-                    <option>Paper</option>
-                    <option>Scissors</option>
+                    <option value="rock">Rock</option>
+                    <option value="paper"> Paper</option>
+                    <option value="scissors">Scissors</option>
                 </select>
             </div>
                 <button id="go-button" type="button" class="btn btn-success">Go!</button>
@@ -55,8 +55,8 @@
 
     <!-- Our own Scripts -->
     
-    <script src="resources/scripts/rock_paper_scissors.js"></script>
-    <script src="resources/scripts/index.js"></script>
+     <script src="resources/scripts/rock_paper_scissors.js"></script>
+    <script src="resources/scripts/index.js"></script> 
 </body>
 
 </html>

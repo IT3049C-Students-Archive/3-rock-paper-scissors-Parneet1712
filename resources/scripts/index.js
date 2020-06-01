@@ -16,7 +16,7 @@ gameScreen.classList.add(`d-none`);
 
 // updateScoreTallyUI
 function updateScoreTallyUI(){
-
+  
 }
 
 // updateGameHistoryUI
@@ -25,12 +25,13 @@ function updateGameHistoryUI(){
 }
 
 // start-game-button EventListener
-start-game-button.addEventListener(`click`, function (startGameButtonEvent) {
-  const username = document.getElementById("userName");
+startGameButton.addEventListener(`click`, function (startGameButtonEvent) {
+  const username = document.getElementById("username").value;
   game = new RockPaperScissors(userName);
+  
   // Complete
 startGameButtonEvent.preventDefault();
-//console.log("User clicked the start button");
+console.log("User clicked the start button");
 welcomeScreen.classList.add("d-none");
 gameScreen.classList.remove("d-none");
 
