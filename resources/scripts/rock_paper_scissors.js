@@ -59,15 +59,36 @@ class RockPaperScissors {
     var e = document.getElementById("user-selection");
     var result = e.options[e.selectedIndex].value;
 
+    //const NEW_SCORE = 2;
     const cpuResponse = this.generateCPUResponse();
-    const results = this.determineWinner(userSelection, cpuSelection);
+    //console.log("This is cpuResponse " + cpuResponse);
+    //console.log("This is userSelection " + userSelection);
+    const results = this.determineWinner(userSelection, cpuResponse);
+    //console.log("These are results: " + results);
 
-    this.score = {
-      user: NEW_SCORE,
-      cpu: NEW_SCORE,
+    console.log(this.username)
 
-       this:gameHistoryLog.push(`Parneet selected Scissors, CPU selected Paper: Parneet wins wins`),
-  }
+    if(results == "win")
+    {
+      this.score.user++;
+      this.gameHistoryLog.push(this.username + " selected " + userSelection + ", CPU selected " + cpuResponse + ": " + this.username + " wins<br>");
+    }
+    else if(results == "lose")
+    {
+      this.score.cpu++;
+      this.gameHistoryLog.push(this.username + " selected " + userSelection + ", CPU selected " + cpuResponse + ": " + this.username + " loses<br>");
+    }
+    else if(results == "tie")
+    {
+      this.gameHistoryLog.push(this.username + " selected " + userSelection + ", CPU selected " + cpuResponse + ": " + this.username + " tied<br>");
+    }
+
+    //this.score = {
+      //user: NEW_SCORE,
+      //cpu: NEW_SCORE
+    //}
+    //this.gameHistoryLog.push(`Parneet selected Scissors, CPU selected Paper: Parneet wins wins`);
+
   }
 
 }

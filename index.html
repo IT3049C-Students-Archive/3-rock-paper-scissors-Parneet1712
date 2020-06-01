@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper and Scissors</title>
+    <title>Rock Paper Scissors</title>
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" /> 
@@ -14,40 +14,39 @@
 <body>
 
     <div class="container">
-    <h1>Rock Paper and Scissors </h1>
+    <h1><i>rock paper scissors</i></h1>
     <div id="welcome-screen">
         <form id="name-form">
             <div class="form-group">
-            <label for="username"> 
-                Name:
-                <input type="text" id="username" placeholder="Enter Your Name Here" class="form-control">
-            </label>
-        </div>
-            <button id="start-game-button" type="button" class="btn btn-primary">Start Game</button>
+                <input type="text" id="username" name="username" placeholder="Enter Name Here..." class="form-control">
+                <label for="username"> 
+                    <i>your name</i>
+                </label>
+            </div>
+            <button id="start-game-button" type="button" class="btn btn-primary"><i>start game!</i></button>
         </form>
     </div>
 
     <div id= "game-screen" class="hidden">
         <div id="score-tally">
-            <p id="score"><USERNAME:> <USER_SCORE> v CPU: <CPU_SCORE></p>
+            <p id="score"><i>user: 0 v cpu: 0</i></p>
         </div>
         <form id="game-form">
             <div class="form-group">
                 <label for="user-selection">
                     Select Your Choice: 
                 </label>
-                <select id="user-selection" class="custom-select">
+                <select id="user-selection" name="user-selection" class="custom-select">
                     <option value="rock">Rock</option>
-                    <option value="paper"> Paper</option>
+                    <option value="paper">Paper</option>
                     <option value="scissors">Scissors</option>
                 </select>
             </div>
                 <button id="go-button" type="button" class="btn btn-success">Go!</button>
-            
-            <p id="game-history"></p>
-
 
         </form>
+        <p id="game-history"></p>
+
            
        
     </div>
