@@ -40,11 +40,11 @@ describe(`html content`, function () {
   //   });
   // });
 
-  // test(`game-screen has a 1px solid red border`, function() {
-  //   const gameScreen = dom.window.document.querySelector(`.container > #game-screen`);
+  test(`game-screen has a 1px solid red border`, function() {
+   const gameScreen = dom.window.document.querySelector(`.container > #game-screen`);
 
-  //   expect(gameScreen).toHaveStyle(`border: 1px solid red`);
-  // });
+     expect(gameScreen).toHaveStyle(`border: 1px solid red`);
+   });
 
   // test(`#game-screen is hidden`, function(){
   //   document.addEventListener(`DOMContentLoaded`, () => {
