@@ -1,3 +1,4 @@
+
 module.exports = {
   setupFilesAfterEnv: [ `@testing-library/jest-dom/extend-expect` ],
   clearMocks: true, 
@@ -9,3 +10,4 @@ module.exports = {
     "^.+\\.[t|j]sx?$": `babel-jest`
   }
 };
+
